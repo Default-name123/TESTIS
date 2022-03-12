@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rock1.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rocks10000" x="0" y="0" width="1798" height="362" frameX="0" frameY="-20" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10001" x="0" y="0" width="1798" height="362" frameX="0" frameY="-20" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10002" x="1798" y="0" width="1798" height="362" frameX="0" frameY="-20" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10003" x="1798" y="0" width="1798" height="362" frameX="0" frameY="-20" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10004" x="0" y="362" width="1798" height="371" frameX="0" frameY="-11" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10005" x="0" y="362" width="1798" height="371" frameX="0" frameY="-11" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10006" x="1798" y="362" width="1798" height="382"/>
+	<SubTexture name="rocks10007" x="1798" y="362" width="1798" height="382"/>
+	<SubTexture name="rocks10008" x="0" y="744" width="1798" height="381" frameX="0" frameY="-1" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10009" x="1798" y="744" width="1798" height="369" frameX="0" frameY="-13" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10010" x="1798" y="744" width="1798" height="369" frameX="0" frameY="-13" frameWidth="1798" frameHeight="382"/>
+	<SubTexture name="rocks10011" x="0" y="1125" width="1798" height="362" frameX="0" frameY="-20" frameWidth="1798" frameHeight="382"/>
+</TextureAtlas>

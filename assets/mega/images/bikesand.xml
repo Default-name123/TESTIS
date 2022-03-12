@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bikesand.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sandbbike0000" x="0" y="0" width="240" height="265" frameX="-36" frameY="0" frameWidth="276" frameHeight="271"/>
+	<SubTexture name="sandbbike0001" x="240" y="0" width="233" height="213" frameX="-8" frameY="-58" frameWidth="276" frameHeight="271"/>
+	<SubTexture name="sandbbike0002" x="0" y="265" width="239" height="186" frameX="0" frameY="-85" frameWidth="276" frameHeight="271"/>
+</TextureAtlas>

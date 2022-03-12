@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rock2.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rocks20000" x="0" y="0" width="1798" height="362"/>
+	<SubTexture name="rocks20001" x="0" y="0" width="1798" height="362"/>
+	<SubTexture name="rocks20002" x="1798" y="0" width="1798" height="362"/>
+	<SubTexture name="rocks20003" x="1798" y="0" width="1798" height="362"/>
+	<SubTexture name="rocks20004" x="0" y="362" width="1798" height="362"/>
+	<SubTexture name="rocks20005" x="0" y="362" width="1798" height="362"/>
+	<SubTexture name="rocks20006" x="1798" y="362" width="1798" height="362"/>
+	<SubTexture name="rocks20007" x="1798" y="362" width="1798" height="362"/>
+	<SubTexture name="rocks20008" x="0" y="724" width="1798" height="362"/>
+	<SubTexture name="rocks20009" x="1798" y="724" width="1798" height="362"/>
+	<SubTexture name="rocks20010" x="1798" y="724" width="1798" height="362"/>
+	<SubTexture name="rocks20011" x="0" y="1086" width="1798" height="362"/>
+</TextureAtlas>

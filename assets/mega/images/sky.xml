@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sky.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idlesky0000" x="0" y="0" width="1679" height="796"/>
+	<SubTexture name="shootingsky0000" x="0" y="0" width="1679" height="796"/>
+	<SubTexture name="shootingsky0001" x="1679" y="0" width="1679" height="796"/>
+	<SubTexture name="shootingsky0002" x="1679" y="0" width="1679" height="796"/>
+	<SubTexture name="shootingsky0003" x="0" y="796" width="1679" height="796"/>
+	<SubTexture name="shootingsky0004" x="0" y="796" width="1679" height="796"/>
+	<SubTexture name="shootingsky0005" x="1679" y="796" width="1679" height="796"/>
+	<SubTexture name="shootingsky0006" x="1679" y="796" width="1679" height="796"/>
+	<SubTexture name="shootingsky0007" x="0" y="1592" width="1679" height="796"/>
+	<SubTexture name="shootingsky0008" x="0" y="1592" width="1679" height="796"/>
+	<SubTexture name="shootingsky0009" x="1679" y="1592" width="1679" height="796"/>
+	<SubTexture name="shootingsky0010" x="1679" y="1592" width="1679" height="796"/>
+	<SubTexture name="shootingsky0011" x="0" y="2388" width="1679" height="796"/>
+	<SubTexture name="shootingsky0012" x="0" y="2388" width="1679" height="796"/>
+</TextureAtlas>

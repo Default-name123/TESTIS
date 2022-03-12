@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ground.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="norocks0000" x="0" y="0" width="1778" height="363" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0001" x="0" y="0" width="1778" height="363" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0002" x="1778" y="0" width="1801" height="342" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0003" x="1778" y="0" width="1801" height="342" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0004" x="0" y="363" width="1776" height="359" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0005" x="0" y="363" width="1776" height="359" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0006" x="1776" y="363" width="1776" height="342" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0007" x="1776" y="363" width="1776" height="342" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0008" x="0" y="722" width="1776" height="342" frameX="0" frameY="0" frameWidth="1829" frameHeight="363"/>
+	<SubTexture name="norocks0009" x="1776" y="722" width="1829" height="363"/>
+	<SubTexture name="norocks0010" x="1776" y="722" width="1829" height="363"/>
+</TextureAtlas>

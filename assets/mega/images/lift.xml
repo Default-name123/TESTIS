@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lift.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="greenbikeup0000" x="0" y="0" width="759" height="642" frameX="-4" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0001" x="0" y="0" width="759" height="642" frameX="-4" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0002" x="759" y="0" width="759" height="642" frameX="-4" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0003" x="759" y="0" width="759" height="642" frameX="-4" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0004" x="1518" y="0" width="759" height="642" frameX="-4" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0005" x="1518" y="0" width="759" height="642" frameX="-4" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0006" x="2277" y="0" width="759" height="642" frameX="-4" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0007" x="3036" y="0" width="763" height="642"/>
+	<SubTexture name="greenbikeup0008" x="0" y="642" width="763" height="642"/>
+	<SubTexture name="greenbikeup0009" x="0" y="642" width="763" height="642"/>
+	<SubTexture name="greenbikeup0010" x="763" y="642" width="761" height="642" frameX="-2" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0011" x="763" y="642" width="761" height="642" frameX="-2" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0012" x="1524" y="642" width="762" height="642" frameX="-1" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0013" x="1524" y="642" width="762" height="642" frameX="-1" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0014" x="2286" y="642" width="762" height="642" frameX="-1" frameY="0" frameWidth="763" frameHeight="642"/>
+	<SubTexture name="greenbikeup0015" x="2286" y="642" width="762" height="642" frameX="-1" frameY="0" frameWidth="763" frameHeight="642"/>
+</TextureAtlas>
