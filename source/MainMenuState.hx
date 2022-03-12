@@ -159,26 +159,20 @@ class MainMenuState extends MusicBeatState
 								{
 									case 'blaster':
 										loadWeek();
-						 
-														  
-					   
-																  
-						
-														 
 									case 'options':
 										MusicBeatState.switchState(new options.OptionsState());
 								}
 							});
 						
 					});
-			
+				
 			}
 			else if (FlxG.keys.justPressed.SEVEN #if mobileC || _virtualpad.buttonC.justPressed #end)
 			{
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
-	        #end
+	                #end
 		}
 
 		super.update(elapsed);
