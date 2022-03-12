@@ -2255,97 +2255,9 @@ class PlayState extends MusicBeatState
 		//trace('Control result: ' + pressed);
 		return pressed;
 	}
-	var vabration:FlxTween;
 
-	function vibrate(char:FlxObject)
-		{
-			vabration=FlxTween.tween(char, { y: char.y+6}, 0.2,{ type: FlxTween.LOOPING, ease: FlxEase.quadInOut});
-		}
-
-		var vabration2:FlxTween;
-
-	function vibrate2(char:FlxObject)
-		{
-			vabration2=FlxTween.tween(char, { y: char.y+6}, 0.2,{ type: FlxTween.LOOPING, ease: FlxEase.quadInOut});
-		}
-
-	var dying:FlxTween;
-	var enterblue:FlxTween;
-	var entergreen:FlxTween;
-	var tweenChar:FlxTween;					
 	public function triggerEventNote(eventName:String, value1:String, value2:String) {
 		switch(eventName) {
-    
-			case "enterblue":
-				
-				enterblue=FlxTween.tween(dad,  { x:-210.35}, 5, {
-					ease: FlxEase.quadInOut,
-					onComplete: function(twn:FlxTween)
-					{
-						enterblue.active=false;
-					}
-				});
-			case "entergreen":
-				entergreen=FlxTween.tween(boyfriend, {x: 522}, 5, {
-					ease: FlxEase.quadInOut,
-					onComplete: function(twn:FlxTween)
-					{
-						entergreen.active=false;
-
-					}
-				});
-			case "Wheelie":
-			
-				lift.alpha=1;
-				lift.animation.play("lift");
-				boyfriend.alpha=0;
-				var naming="greenw";
-				lift.animation.finishCallback = function(whitewhitty:String)
-					{			
-						lift.destroy();
-						boyfriend.alpha=1;
-						var lastAlpha:Float = boyfriend.alpha;
-						if(boyfriend.curCharacter != naming) {
-							if(!boyfriendMap.exists(naming)) {
-								addCharacterToList(naming, 0);
-							}
-							var lastAlpha:Float = boyfriend.alpha;
-							boyfriend.alpha = 0.00001;
-							boyfriend = boyfriendMap.get(naming);
-							boyfriend.alpha = lastAlpha;
-						}
-						
-						setOnLuas('boyfriendName', boyfriend.curCharacter);
-			
-					}  
-			case "tweenINHud":
-				FlxTween.tween(camHUD, { alpha: 1}, 0.5);
-			
-			case "Fuckingdeath":
-			
-				deathExplo.alpha=1;
-				deathExplo.animation.play("die");
-				boyfriend.alpha=0;
-				bikesand.visible =false;
-				bikesand2.visible =false;
-				dying=FlxTween.tween(deathExplo, { x: deathExplo.x-1100}, 8,{
-					onComplete: function(twn:FlxTween)
-					{
-						healthBar.createFilledBar(FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]),FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]));
-						iconP1.visible =false;
-						
-					}
-				});
-				deathExplo.animation.finishCallback = function(whitewhitty:String)
-					{			
-						deathExplo.alpha=0;
-			
-					}  	
-			
-				case "tweenChar":	
-				   
-					tweenChar=FlxTween.tween(boyfriend, { x: boyfriend.x-Std.parseFloat(value2)}, Std.parseFloat(value1));
-
 			case 'Hey!':
 				var value:Int = 2;
 				switch(value1.toLowerCase().trim()) {
@@ -3740,60 +3652,54 @@ class PlayState extends MusicBeatState
 			dad.dance();
 		}
 
-		if(curBeat % 10 == 0 && FlxG.random.bool(50))
-   
-				 
-								 
-					 
-	 
-
-			   
-								 
-							  
-	 
-
-												
-					  
-
-			   
-								 
-															 
-	  
-					 
-		
-	 
-
-			if(FlxG.random.bool(50))
-					
-				 
-					 
-						
-
-						 
-				{
-					rockclose.alpha=1;
-					rockclose.animation.play('idle');
-					rockclose.animation.finishCallback = function(lmao:String)
-						{			
-
-																			
-
-													   
-							rockclose.alpha=0;
-						}  
+		switch (curStage)
+		{
+			case 'school':
+				if(!ClientPrefs.lowQuality) {
+					bgGirls.dance();
 				}
 
-		if(curBeat % 10 == 0 && FlxG.random.bool(50))
-			if(FlxG.random.bool(50))
-				{
-					rockfar.alpha=1;
-					rockfar.animation.play('idle');
-					rockfar.animation.finishCallback = function(lmao:String)
-						{			
-							rockfar.alpha=0;
-						}  
+			case 'mall':
+				if(!ClientPrefs.lowQuality) {
+					upperBoppers.dance(true);
 				}
-		
+
+				if(heyTimer <= 0) bottomBoppers.dance(true);
+				santa.dance(true);
+
+			case 'limo':
+				if(!ClientPrefs.lowQuality) {
+					grpLimoDancers.forEach(function(dancer:BackgroundDancer)
+					{
+						dancer.dance();
+					});
+				}
+
+				if (FlxG.random.bool(10) && fastCarCanDrive)
+					fastCarDrive();
+			case "philly":
+				if (!trainMoving)
+					trainCooldown += 1;
+
+				if (curBeat % 4 == 0)
+				{
+					phillyCityLights.forEach(function(light:BGSprite)
+					{
+						light.visible = false;
+					});
+
+					curLight = FlxG.random.int(0, phillyCityLights.length - 1, [curLight]);
+
+					phillyCityLights.members[curLight].visible = true;
+					phillyCityLights.members[curLight].alpha = 1;
+				}
+
+				if (curBeat % 8 == 4 && FlxG.random.bool(30) && !trainMoving && trainCooldown > 8)
+				{
+					trainCooldown = FlxG.random.int(-4, 0);
+					trainStart();
+				}
+		}
 
 		if (curStage == 'spooky' && FlxG.random.bool(10) && curBeat > lightningStrikeBeat + lightningOffset)
 		{

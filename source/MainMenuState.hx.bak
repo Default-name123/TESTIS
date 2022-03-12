@@ -157,16 +157,16 @@ class MainMenuState extends MusicBeatState
 
 								switch (daChoice)
 								{
-									case 'blaster':
-										loadWeek();
-						 
-														  
-					   
-																  
-						
-														 
+									case 'story_mode':
+										MusicBeatState.switchState(new StoryMenuState());
+									case 'freeplay':
+										MusicBeatState.switchState(new FreeplayState());
+									case 'awards':
+										MusicBeatState.switchState(new AchievementsMenuState());
+									case 'credits':
+										MusicBeatState.switchState(new CreditsState());
 									case 'options':
-										MusicBeatState.switchState(new options.OptionsState());
+										MusicBeatState.switchState(new OptionsState());
 								}
 							});
 						}
@@ -178,47 +178,39 @@ class MainMenuState extends MusicBeatState
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
-	        #end
 		}
 
 		super.update(elapsed);
 
-		
-	}
-	function loadWeek()
+		menuItems.forEach(function(spr:FlxSprite)
 		{
-		
-			PlayState.storyPlaylist = ['blaster'];
-			PlayState.isStoryMode = true;
-			PlayState.storyDifficulty = 1;
-			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() , PlayState.storyPlaylist[0].toLowerCase());
-			PlayState.campaignScore = 0;
-			PlayState.campaignMisses = 0;
-			LoadingState.loadAndSwitchState(new PlayState(), true);
-			FreeplayState.destroyFreeplayVocals();
-		   
-		
-		}
-
+			spr.screenCenter(X);
+		});
+	}
 
 	function changeItem(huh:Int = 0)
 	{
 		curSelected += huh;
 
-		if (curSelected ==-1)
-			curSelected = 1;
-		else if (curSelected ==2)
+		if (curSelected >= menuItems.length)
 			curSelected = 0;
-		
+		if (curSelected < 0)
+			curSelected = menuItems.length - 1;
+
 		menuItems.forEach(function(spr:FlxSprite)
 		{
 			spr.animation.play('idle');
-			
-			
+			spr.offset.y = 0;
+			spr.updateHitbox();
+
 			if (spr.ID == curSelected)
 			{
 				spr.animation.play('selected');
-				
+				camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y);
+				spr.offset.x = 0.15 * (spr.frameWidth / 2 + 180);
+				spr.offset.y = 0.15 * spr.frameHeight;
+				FlxG.log.add(spr.frameWidth);
+			}
 		});
 	}
 }
