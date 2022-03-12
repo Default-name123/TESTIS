@@ -1,0 +1,90 @@
+{
+	"animations": [
+
+		{
+			"offsets": [],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "greenwheelieleft",
+			"indices": []
+		},
+		{
+			"offsets": [],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "greenwheeliedown",
+			"indices": []
+		},
+		{
+			"offsets": [],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "greenwheelieup",
+			"indices": []
+		},
+		{
+			"offsets": [],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "greenwheelieright",
+			"indices": []
+		},
+		{
+			"offsets": [],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "greenwheelieidle",
+			"indices": []
+		},
+		{
+			"offsets": [-62,123],
+			"loop": false,
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "greenwheeliedead0",
+			"indices": []
+		},
+		{
+			"offsets": [-58,-6],
+			"loop": false,
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "greenwheeliedead1",
+			"indices": []
+		},
+		{
+			"offsets": [-60,0],
+			"loop": false,
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "greenwheeliedead2",
+			"indices": []
+		},
+		{
+			"offsets": [],
+			"loop": false,
+			"anim": "bikeDEATH",
+			"fps": 24,
+			"name": "greenbikedeath",
+			"indices": [571,239]
+		}
+
+		
+	],
+	"no_antialiasing": false,
+	"image": "characters/greenw",
+	"position": [1522,0],
+	"healthicon": "green",
+	"flip_x": true,
+	"healthbar_colors": [
+		204,
+		204,
+		51	],
+	"camera_position": [0,0],
+	"sing_duration": 4
+}

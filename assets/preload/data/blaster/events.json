@@ -1,0 +1,89 @@
+{
+	"song": {
+		"speed": 3.2,
+		"stage": "sand",
+		"player1": "green",
+		"player2": "blue",
+		"player3": null,
+		"events": [
+			[
+				83.3333333333333,
+				[
+					[
+						"enterblue",
+						"",
+						""
+					]
+				]
+			],
+			[
+				333.333333333333,
+				[
+					[
+						"entergreen",
+						"",
+						""
+					]
+				]
+			],
+			[
+				4166.66666666667,
+				[
+					[
+						"tweenINHud",
+						"",
+						""
+					]
+				]
+			],
+			[
+				61166.6666666667,
+				[
+					[
+						"Camera Follow Pos",
+						"570",
+						"390"
+					]
+				]
+			],
+			[
+				63833.3333333334,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				64083.3333333334,
+				[
+					[
+						"Wheelie",
+						"",
+						""
+					]
+				]
+			],
+			[
+				94333.3333333333,
+				[
+					[
+						"Fuckingdeath",
+						"",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 180,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "blaster"
+	}
+}
