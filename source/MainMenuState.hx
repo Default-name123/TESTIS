@@ -169,9 +169,9 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new options.OptionsState());
 								}
 							});
-						}
+						
 					});
-				}
+			
 			}
 			else if (FlxG.keys.justPressed.SEVEN #if mobileC || _virtualpad.buttonC.justPressed #end)
 			{
